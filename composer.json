@@ -1,0 +1,38 @@
+{
+    "name": "wladblok/blok",
+    "description": "blok",
+    "type": "library",
+    "license": "-",
+    "authors": [
+        {
+            "name": "vladislaw blok",
+            "email": "vl-blok@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rok9ru/trpo-core": "2.0"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "rok9ru/trpo-core",
+                "version": "2.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rok9ru/trpo-core",
+                    "reference": "master",
+                    "autoload": {
+                        "files": [
+                            "core/EquationInterface.php",
+                            "core/LogAbstract.php",
+                            "core/LogInterface.php"
+                        ]
+                    }
+                }
+            }
+
+        }
+    ]
+}
