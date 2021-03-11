@@ -1,5 +1,4 @@
 .idea
-composer.phar
-README.md
+.phar
 
-/vendor/
+vendor/
