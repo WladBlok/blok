@@ -1,5 +1,5 @@
 <?php
-
-class BlokException extends RuntimeException {
+namespace blok;
+class BlokException extends \RuntimeException {
 
 }

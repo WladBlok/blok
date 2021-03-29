@@ -2,7 +2,6 @@
 
 
 namespace blok;
-use BlokException;
 class Linear
 {
     protected $x;

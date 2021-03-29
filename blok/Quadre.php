@@ -2,9 +2,9 @@
 
 
 namespace blok;
-use BlokException;
 use core\EquationInterface;
 use Exception;
+
 class Quadre extends Linear implements EquationInterface{
     protected $d;
     protected $k;

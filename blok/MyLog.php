@@ -29,12 +29,12 @@ class MyLog extends LogAbstract
         }
     }
 
-    public static function log($str)
+    public static function log(string $str):void
     {
         self::Instance()->log[] = $str;
     }
 
-    public static function write()
+    public static function write():void
     {
         self::Instance()->_write();
     }
