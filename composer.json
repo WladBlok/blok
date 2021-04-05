@@ -18,6 +18,9 @@
       "blok\\": "blok"
     }
   },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
   "repositories": [
     {
       "type": "git",
