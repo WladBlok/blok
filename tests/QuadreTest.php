@@ -11,7 +11,7 @@ class QuadreTest extends \PHPUnit\Framework\TestCase
     public function testSolve($a, $b, $c,$x,$k)
     {
         $o = new Quadre();
-        $this->assertEquals(array($x,$k), $o->Solve($a, $b, $c));
+        $this->assertEquals(array($x,$k), $o->solve($a, $b, $c));
     }
 
 
@@ -22,6 +22,14 @@ class QuadreTest extends \PHPUnit\Framework\TestCase
             array(1, 4, 3,-3,-5)
         );
     }
+    public function TestBlokException()
+    {
+        $o = new Quadre();
 
+        $o->solve(1, 3, 5);
+
+        $this->expectException(BlokException::class);
+
+    }
 
 }
